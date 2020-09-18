@@ -1,6 +1,6 @@
 #ifndef NEWTONRAPSON_H
 #define NEWTONRAPSON_H
-
+//Autor: Edgard Diaz
 class NewtonRapson
 {
 	//Metodos  de clase publicos
