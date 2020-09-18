@@ -1,11 +1,10 @@
 #include "NewtonRapson.h"
 #include <cmath>
-#include<iostream>
-using namespace std;
 
+//Autor: Edgard Díaz
 
-	NewtonRapson::NewtonRapson(){}
-		NewtonRapson::~NewtonRapson(){}
+NewtonRapson::NewtonRapson(){}
+NewtonRapson::~NewtonRapson(){}
 
 
 // Funcion a evaluar, cambiar para otras aproximaciones
@@ -38,7 +37,7 @@ double NewtonRapson::calcula_raiz(double x0, float tolerancia, int Iteraciones)
 		{
 			
 			x1 = x0 - (funcion(x0)/f_derivada(x0)); // Calculo de la siguiente aproximacion
-			error = fabs(x1 - x0); //Error, es la diferencia entre dos aproximaciones sucesivas, entremas peque�o es el error mas exacta es la  raiz obtenida
+			error = fabs(x1 - x0); //Error, es la diferencia entre dos aproximaciones sucesivas, entremas pequeño es el error mas exacta es la  raiz obtenida
 			
 			if(error <= tolerancia) //Criterio de paro, cuando el error es menor a la tolerancia se ha llegado a una aproximacion muy cercana a la raiz real
 			{
